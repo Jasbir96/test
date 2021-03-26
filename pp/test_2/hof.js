@@ -48,10 +48,8 @@ let EvenArr = arr.filter(isEven);
 // function fn() {
 // }
 
-
 // let newArr = arr.filter(fn);
 // console.log(newArr);
-
 let arr = [10, 20, 30, 40, 50, 17, 11, 23];
 function add(storage, ith) {
     return storage + ith;
@@ -61,7 +59,7 @@ function product(storage, ith) {
 }
 // let product = arr.reduce(add);
 function myReduce(arr, cb) {
-    let storage = arr[0];
+    let storage = arr[0]
     for (let i = 1; i < arr.length; i++) {
         storage = cb(storage, arr[i]);
     }
