@@ -1,7 +1,8 @@
 function fn(param) {
-    param();
+    // param();
     console.log("I am param ", param);
-    console.log("I am param ", param(varName));
+    console.log("I am param ", param(10));
+    
 }
 // functions are also treated as variables
 // fn(10);
@@ -9,10 +10,9 @@ function fn(param) {
 function cb(varName) {
     console.log(varName);
     console.log("I am cb");
-    return 10;
+    return 20;
 }
 fn(cb);
-Element.addEventListener("click", cb);
 // left to right
 // /functions are varibales
 //  functions invoke -> code run 
